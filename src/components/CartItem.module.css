@@ -1,0 +1,85 @@
+/* CartItem.module.css */
+.cartItem {
+    border: 1px solid #e0e0e0;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.cartItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cartItemImage {
+    max-width: 100px;
+    margin-right: 16px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.cartItemDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItemName {
+    font-size: 1.5em;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.cartItemPrice {
+    color: #888;
+    font-size: 1.2em;
+}
+
+.cartItemSelect {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #b1b1b1;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+    margin-right: 16px;
+}
+
+.cartItemSelect:focus, .cartItemSelect:hover {
+    border-color: #aaa;
+    background-color: #f9f9f9;
+}
+
+.cartItemRemoveButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cartItemRemoveButton:hover, .cartItemRemoveButton:focus {
+    background-color: #c82333;
+}
+
+.cartItemRemoveButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+}
